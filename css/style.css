@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: Gilroy-semi;
+    src: url("../fonts/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Gilroy-bold;
+    src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+header {
+    height: 900px;
+    background: url(../PNG/header.png) top center;
+    background-size: cover;
+    display: flex;
+
+}
+
+.center-div {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.nav-menu {
+    padding: 24px 70px 0 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-end {
+    width: 582px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-end ul {
+    width: 395px;
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section-end ul li, footer ul li {
+    list-style-type: none;
+    display: inline;
+    font-family: Gilroy, sans-serif;
+    font-size: 16px;
+}
+
+.section-end ul li a, footer ul li a {
+    color: #303030;
+}
+
+.language-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 63px;
+    height: 30px;
+}
+
+.btn-uk {
+    height: 30px;
+    background: #81935A;
+    text-align: center;
+    font-size: 14px;
+    font-family: Gilroy-semi, sans-serif;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn-uk p {
+    padding: 6.5px 10px;
+    cursor: pointer;
+}
+
+.btn-en {
+    text-align: right;
+    font-size: 14px;
+    font-family: Gilroy-semi, sans-serif;
+}
+
+.btn-en p {
+    padding: 6.5px 0 0 10px;
+    color: #CAC7BE;
+}
+
+.header-description {
+    max-width: 875px;
+    height: 831.5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-description h1 {
+    margin: 10px 0;
+    font-family: Gilroy-bold, sans-serif;
+    font-size: 50px;
+    color: #303030;
+}
+
+.btn-first-word {
+    color: #81935A;
+}
+
+.header-description p {
+    font-family: Gilroy, sans-serif;
+    font-size: 20px;
+    color: #303030;
+    letter-spacing: 0.35px;
+    line-height: 160%;
+}
+
+.btn-callback {
+    width: 200px;
+    height: 48px;
+    margin-top: 20px;
+    background: #81935A;
+    border-radius: 4px;
+}
+
+.btn-callback p {
+    padding: 14px 25px;
+    font-family: Gilroy-semi, sans-serif;
+    font-size: 18px;
+    color: #fcfcfc;
+    letter-spacing: 0;
+    line-height: 100%;
+}
+
+#section-about {
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-wrap {
+    max-width: 926px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.avocado-picture img {
+    width: 420px;
+    height: 420px;
+}
+
+.block-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block-about h1 {
+    font-family: Gilroy-bold, sans-serif;
+    font-size: 40px;
+    color: #81935A;
+    margin-bottom: 15px;
+}
+
+.block-about h1 span {
+    color: #303030;
+}
+
+.block-about p {
+    font-family: Gilroy, sans-serif;
+    font-size: 20px;
+    color: #303030;
+    letter-spacing: 0.35px;
+    line-height: 160%;
+}
+
+.btn-about-callback {
+    width: 200px;
+    height: 48px;
+    background: #fff;
+    border: 2px solid #81935A;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.btn-about-callback p {
+    padding: 10px 22px;
+    font-family: Gilroy-semi, sans-serif;
+    font-size: 18px;
+    color: #81935A;
+}
+
+#section-partners {
+    height: 750px;
+    background: #81935A;
+    background-image: url("../SVG/pattern desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.partners-wrap h1 {
+    font-family: Gilroy-bold, sans-serif;
+    font-size: 40px;
+    color: #fff;
+    line-height: 48px;
+    margin-bottom: 34px;
+}
+
+.countries-div {
+    width: 629px;
+    color: #FBFBFB;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.countries-div p {
+    padding: 9px 28px;
+    font-family: Gilroy, sans-serif;
+    font-size: 18px;
+    background: #778655;
+    border-radius: 4px;
+    margin: 0 24px 24px 0;
+}
+
+#section-contacts {
+    height: 750px;
+    background: url("../PNG/vegetables.png") top center;
+    background-size: cover;
+    display: flex;
+}
+
+.contacts-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contacts-info {
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts-info h1 {
+    font-family: Gilroy-bold, sans-serif;
+    font-size: 40px;
+    color: #303030;
+    line-height: 48px;
+    margin-bottom: 18px;
+}
+
+.contacts-info p {
+    font-family: Gilroy, sans-serif;
+    font-size: 20px;
+    color: #303030;
+    line-height: 160%;
+    margin-bottom: 34px;
+}
+
+footer {
+    height: 231px;
+    display: flex;
+    background: #F4F2F2;
+}
+
+.footer-nav-menu {
+    height: 231px;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-wrap ul {
+    width: 395px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.footer-lan-btn {
+    margin-top: 11px;
+}
