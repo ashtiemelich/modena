@@ -24,15 +24,14 @@ a {
 
 header {
     height: 900px;
-    background: url(../PNG/header.png) top center;
+    background: url(../PNG/header.png);
     background-size: cover;
     display: flex;
-
 }
 
 .center-div {
-    margin: 0 auto;
     width: 1440px;
+    margin: 0 auto;
 }
 
 .nav-menu {
@@ -151,11 +150,22 @@ header {
     justify-content: center;
 }
 
+.onion-bg {
+    width: 220px;
+    height: 270px;
+    position: absolute;
+    background: url("../SVG/onion.svg") no-repeat;
+    left: 19.2%;
+    z-index: -1;
+    margin-top: -355px;
+}
+
 .about-wrap {
     max-width: 926px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .avocado-picture img {
@@ -215,6 +225,10 @@ header {
     justify-content: center;
 }
 
+.partners-wrap {
+    margin-left: 170px;
+}
+
 .partners-wrap h1 {
     font-family: Gilroy-bold, sans-serif;
     font-size: 40px;
@@ -256,6 +270,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 190px;
 }
 
 .contacts-info h1 {
@@ -278,6 +293,15 @@ footer {
     height: 231px;
     display: flex;
     background: #F4F2F2;
+}
+
+.footer-svg {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background: url("../SVG/pepper.svg") no-repeat;
+    right: 22%;
+    margin-top: 31px;
 }
 
 .footer-nav-menu {
