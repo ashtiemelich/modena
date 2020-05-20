@@ -2,80 +2,100 @@
     header {
         height: 900px;
     }
+
     .nav-menu {
         padding: 24px 40px 0 40px;
     }
+
     .section-end ul {
         width: 319px;
         margin: 18px 0 0 12%;
     }
+
     .language-button {
         margin-top: 15px;
     }
+
     .header-description {
         max-width: 600px;
     }
+
     .header-description h1 {
         font-size: 40px;
         margin-bottom: 20px;
     }
+
     .header-description p {
         font-size: 18px;
     }
+
     .btn-callback {
         margin-top: 30px;
     }
+
     #section-about {
         height: 1153px;
     }
+
     .about-wrap {
         max-width: 388px;
         width: 100%;
         flex-direction: column;
     }
+
     .avocado-picture {
         margin: 0 auto;
         margin-bottom: 55px;
     }
+
     .avocado-picture img {
         width: 360px;
         height: 360px;
     }
+
     .onion-bg img {
         width: 213px;
         height: 263px;
     }
+
     #section-partners {
         height: 900px;
         background-image: url("../image/SVG/pattern tablet.svg");
         background-position: bottom;
     }
+
     .partners-wrap {
         max-width: 603px;
         width: 100%;
         margin: 0 auto;
         margin-top: -150px;
     }
+
     .countries-div p {
         padding: 14.5px 28.6px;
         margin: 0 23px 24px 0;
     }
+
     .contacts-info {
         max-width: 438px;
         width: 100%;
         margin-right: 0;
     }
+
     .contacts-info p {
         font-size: 18px;
     }
+
     .footer-nav-menu {
         padding: 0 40px;
         height: 207px;
     }
+
     .footer-wrap ul {
         max-width: 319px;
         width: 100%;
     }
+
     .footer-svg {
         width: 189px;
         height: 130px;
@@ -84,101 +104,237 @@
         background-size: cover;
     }
 }
+
 @media screen and (max-width: 375px) {
     header {
         height: 667px;
     }
+
     .nav-menu {
         padding: 26px 24px 0 24px;
     }
+    .section-end {
+        width: 110px;
+    }
+    .section-end ul {
+        display: none;
+    }
+
     .header-description {
         height: 667px;
         max-width: 331px;
     }
+
     .header-description h1 {
         font-size: 32px;
     }
+
     .header-description p {
         font-size: 16px;
     }
+
+    .b-mobile_nav {
+        display: block;
+        position: absolute;
+        right: 26px;
+        top: 50px;
+    }
+
+
+    .b-mobile_nav-hamburger_icon {
+        background: #81935A;
+        border-radius: 3px;
+        display: block;
+        height: 2px;
+        margin-bottom: 3px;
+        position: relative;
+        transform-origin: 4px 0;
+        transition: transform .5s cubic-bezier(.77, .2, .05, 1), background .5s cubic-bezier(.77, .2, .05, 1), opacity .55s ease;
+        width: 21px;
+        z-index: 1;
+    }
+
+    .b-mobile_nav-list {
+        background: url("../image/menu.png") no-repeat;
+        display: flex;
+        flex-direction: column;
+        -webkit-font-smoothing: antialiased;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        list-style-type: none;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        transform: translate(-100%, 0);
+        transform-origin: 0 0;
+        transition: transform .5s cubic-bezier(.77, .2, .05, 1);
+        width: 100%;
+        font-family: Gilroy-semi, sans-serif;
+    }
+    .b-mobile_nav-list a {
+        color: #303030;
+    }
+    .b-mobile_nav-list .b-nav-item {
+        margin-bottom: 50px;
+    }
+
+    .b-mobile_nav-list .b-nav-item_link {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .b-mobile_nav-toggle {
+        display: block;
+        position: relative;
+        -webkit-user-select: none;
+        user-select: none;
+        z-index: 1;
+    }
+
+    .b-mobile_nav-input {
+        cursor: pointer;
+        display: block;
+        height: 32px;
+        left: -15px;
+        opacity: 0;
+        position: absolute;
+        top: -13px;
+        -webkit-touch-callout: none;
+        width: 40px;
+        z-index: 2;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0 0;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0 100%;
+    }
+
+    #menuToggle input:checked ~ span {
+        background: #81935A;
+        margin-bottom: 3px;
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px)
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0) scale(.2, .2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        margin-bottom: 3px;
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
     #section-about {
         height: 812px;
     }
+
     .about-wrap {
         max-width: 254px;
         margin-top: 1px;
     }
+
     .avocado-picture img {
         width: 250px;
         height: 250px;
     }
+
     .onion-bg img {
         width: 149px;
         height: 183px;
         margin: -72px 0 0 -57px;
     }
+
     .block-about h1 {
         font-size: 28px;
     }
+
     .block-about p {
         font-size: 16px;
     }
+
     .block-about p br {
         display: none;
     }
+
     #section-partners {
         background-image: url("../image/SVG/pattern mobile.svg");
         height: 820px;
     }
+
     .partners-wrap {
         max-width: 348px;
         margin-top: -207px;
     }
+
     .partners-wrap h1 {
         font-size: 28px;
     }
+
     .countries-div {
         width: auto;
     }
+
     .countries-div p {
         padding: 12px 16.45px;
         margin: 0 14px 16px 0;
         font-size: 14px;
     }
+
     #section-contacts {
         height: 820px;
         background-image: url("../image/vegetables_mobile.png");
         background-size: 540px 999px;
         background-repeat: no-repeat;
     }
+
     .contacts-info {
         max-width: 350px;
         margin-top: -80px;
     }
+
     .contacts-info h1 {
         font-size: 28px;
     }
+
     .contacts-info p {
         font-size: 16px;
     }
+
     footer {
         height: 219px;
     }
+
     .footer-nav-menu {
         padding: 0 24px;
     }
+
     .footer-wrap {
         margin-top: -54px;
     }
+
     .footer-wrap ul {
         position: absolute;
         max-width: 325px;
         margin-top: 80px;
     }
+
     .footer-svg {
         width: 148px;
         height: 94px;
         right: 25%;
         margin-top: 125px;
     }
+
 }

@@ -99,6 +99,10 @@ header {
     color: #CAC7BE;
 }
 
+.b-mobile_nav {
+    display:none
+}
+
 .header-description {
     max-width: 875px;
     height: 100vh;
